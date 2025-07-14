@@ -36,6 +36,7 @@ HATPRO data was processed using mwrpy on the ACTRIS/Cloudnet server (https://git
 <!-- Cloud_radar -->
 ## Cloud radar
 
+The installation of the cloud radar on the ship, as well as operational the settings induced errors into the data which we corrected for. Besides an approved despeckling routine (by Willi Schimmel), which is based on the identification of isolated pixels, other major issues are tackled. Doppler spectrum folding caused the chosen unambiguous range of velocities is accounted for by a newly adapted dealiasing routine (A. Kötsche and A.Trosits) based on previous work by Willi Schimmel. After this, the heave motion (up and down) of the ship needs to be subtracted from the Doppler spectra, which is done as for the EUREC4A data set (https://github.com/remsens-lim/eurec4a). Additionally, ghost echos are partly removed and flagged.
 
 <!-- #ain_flag -->
 ## MRR-based rain flag
