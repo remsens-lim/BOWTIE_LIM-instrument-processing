@@ -26,7 +26,8 @@
 <!-- Introduction -->
 ## Introduction
 
-In this repository the LIM team stores the BOWTIE post processing scripts of the microwave radiometer HATPRO, motion stabilized 94 GHz cloud radar, ceilometer, a rain flag based on a micro rain radar and cloudnet products.
+In this repository the LIM team stores the BOWTIE post processing scripts of the microwave radiometer HATPRO, motion stabilized 94 GHz cloud radar, ceilometer, a rain flag based on a micro rain radar and cloudnet products. The processing for each instruments uses *.yaml files (not uploaded) containing paths and global attributes according to the /instruments/example.yaml.
+
 
 <!-- HATPRO -->
 ## HATPRO

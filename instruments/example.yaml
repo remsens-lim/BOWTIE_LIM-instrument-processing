@@ -1,0 +1,17 @@
+paths:
+    data_path:
+    data_path_out:
+
+global_attrs:
+    summary:
+    creator_name:
+    creator_email:
+    license:
+    project:
+    platform:
+    history:
+    references:
+    processing_level:
+    institution:
+    instrument:
+    creator_id:
