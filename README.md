@@ -39,9 +39,13 @@ HATPRO data was processed using mwrpy on the ACTRIS/Cloudnet server (https://git
 
 The installation of the cloud radar on the ship, as well as operational the settings induced errors into the data which we corrected for. Besides an approved despeckling routine (by Willi Schimmel), which is based on the identification of isolated pixels, other major issues are tackled. Doppler spectrum folding caused the chosen unambiguous range of velocities is accounted for by a newly adapted dealiasing routine (A. Kötsche and A.Trosits) based on previous work by Willi Schimmel. After this, the heave motion (up and down) of the ship needs to be subtracted from the Doppler spectra, which is done as for the EUREC4A data set (https://github.com/remsens-lim/eurec4a). Additionally, ghost echos are flagged and if isolated also removed. This data set was uploaded to the Cloudnet data portal to derive additional cloud microphysical  variables such as eg. ice and droplet effective radii and to classify the observed targets. Following to this the vertical reolution was unified and a rain attenuation flag based on the doppler velocity at signal top height and rain rates at the ground was added to the dataset. 
 
+**rain flag**
+
+From checking the cloud radar data on IPFS, the rain detection flag of the cloud radar is set, when the Reflectivity in the 4th rang gate ( ds.height[3] = 165m ) exceeds 3.1dBZ.
+
 <!-- #ain_flag -->
 ## MRR-based rain flag
-Micro rain radar raw data was stored in *.nc. We used the thirdlowest rangebin (156m) and a Ze threshold of 3 dBZ to identify surface rain. Afterwards, we added the global attributes according to the IPFS standards and saved the output as *.zarr files using the ~/instruments/MRR/MRR_processing.ipynb.
+Micro rain radar raw data was stored in *.nc. We used the fourthlowest rangebin (156m) and a Ze threshold of 3 dBZ to identify surface rain. Afterwards, we added the global attributes according to the IPFS standards and saved the output as *.zarr files using the ~/instruments/MRR/MRR_processing.ipynb.
 
 <!-- Ceilometer -->
 ## Ceilometer
