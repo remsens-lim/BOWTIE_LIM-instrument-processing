@@ -41,11 +41,11 @@ The installation of the cloud radar on the ship, as well as operational the sett
 
 **rain flag**
 
-From checking the cloud radar data on IPFS, the rain detection flag of the cloud radar is set, when the Reflectivity in the 4th rang gate ( ds.height[3] = 165m ) exceeds 3.1dBZ.
+The rain detection flag of the cloud radar is set to true, when the reflectivity in the 4th rang gate (165m) exceeds 3.1 dBZ.
 
 <!-- #ain_flag -->
 ## MRR-based rain flag
-Micro rain radar raw data was stored in *.nc. We used the fourthlowest rangebin (156m) and a Ze threshold of 3 dBZ to identify surface rain. Afterwards, we added the global attributes according to the IPFS standards and saved the output as *.zarr files using the ~/instruments/MRR/MRR_processing.ipynb.
+Micro rain radar raw data was stored in *.nc. We used the fourthlowest rangebin (156m) and a reflectivity threshold of 3 dBZ to identify surface rain. Afterwards, we added the global attributes according to the IPFS standards and saved the output as *.zarr files using the ~/instruments/MRR/MRR_processing.ipynb.
 
 <!-- Ceilometer -->
 ## Ceilometer
